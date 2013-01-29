@@ -2,9 +2,9 @@
 <feature
       id="j2cpp"
       label="J2cpp"
-      version="1.0.0">
+      version="1.0.1">
 
-   <description url="http://www.example.com/description">
+   <description url="http://tsug.github.com/j2cpp/">
       Java To C++ Converter
    </description>
 
@@ -16,11 +16,25 @@
       [Enter License Description here.]
    </license>
 
+   <url>
+      <update label="http://tsug.github.com/j2cpp/update" url="http://tsug.github.com/j2cpp/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.cdt.core" version="5.4.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.8.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.text" version="3.5.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ltk.core.refactoring" version="3.6.0" match="greaterOrEqual"/>
+   </requires>
+
    <plugin
          id="j2cpp.core"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.1"
          unpack="false"/>
 
 </feature>
